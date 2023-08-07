@@ -1,0 +1,29 @@
+site_name: pyaddress docs
+
+nav:
+  - Home: index.md
+  - Design: design.md
+  - Reference: reference.md
+
+theme:
+  name: material
+
+plugins:
+  - autorefs
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [pyaddress]
+          options:
+            docstring_style: google
+            docstring_section_style: list
+            members_order: source
+            show_root_heading: true
+            show_source: false
+            show_signature_annotations: true
+
+watch:
+  - pyaddress
+
+copyright: Maintained by <a href="mailto:mateuszjarek.mj@gmail.com">Mateusz Jarek</a>

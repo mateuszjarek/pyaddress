@@ -1,0 +1,10 @@
+-r requirements.txt
+
+black
+pylint
+pytest
+mkdocs
+mkdocstrings
+mkdocs-material
+
+
